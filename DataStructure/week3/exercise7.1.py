@@ -5,10 +5,9 @@
 # Use words.txt as the file name
 fname = input("Enter file name: ")
 fh = open(fname)
-rd = fh.read().upper()
-
-print(rd)
-
+for lx in fh:
+    ly = lx.strip()
+    print(ly.upper())
 
 
 
