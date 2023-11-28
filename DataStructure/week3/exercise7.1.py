@@ -4,7 +4,7 @@
 
 # Use words.txt as the file name
 fname = input("Enter file name: ")
-fh = open(fname)
+fh = open(fname + ".txt")
 for lx in fh:
     ly = lx.strip()
     print(ly.upper())
