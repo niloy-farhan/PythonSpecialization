@@ -14,3 +14,9 @@ inp = lhand.read()
 print(len(inp))
 print(inp[:20]) //slicing
 
+xhand = open('mbox-short.txt')
+for line in xhand:
+    line = line.rstrip()
+    if line.startswith('From:'):
+        print(line)
+
