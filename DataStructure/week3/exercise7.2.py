@@ -9,7 +9,6 @@
 
 # Use the file name mbox-short.txt as the file name
 fname = input("Enter file name: ")
-fname = "mbox-short.txt"
 fh = open(fname)
 total_pr = 0
 count = 0
