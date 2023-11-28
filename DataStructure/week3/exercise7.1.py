@@ -6,7 +6,7 @@
 fname = input("Enter file name: ")
 fh = open(fname + ".txt")
 for lx in fh:
-    ly = lx.strip()
+    ly = lx.rstrip()
     print(ly.upper())
 
 
