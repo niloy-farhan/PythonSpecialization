@@ -20,3 +20,22 @@ for line in xhand:
     if line.startswith('From:'):
         print(line)
 
+yhand = open('mbox-short.txt')
+for line in xhand:
+    line = line.rstrip()
+    if not line.startswith('From:'):
+        print(line)
+
+fname = input('Enter your file name: ')
+try:
+    fhand = open(fname);
+except:
+    print("File can't be opened:", fname)
+    quit()
+
+count = 0
+
+for line in fhand:
+    if line.startswith('Subject:'):
+        count = count + 1
+print('There were', count, 'subject lines in', fname)
