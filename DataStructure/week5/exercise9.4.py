@@ -15,11 +15,9 @@ for line in handle:
     line = line.rstrip()
     words = line.split()
     for w in words:
-        print("**", w, di.get(w, -99))
-        if w in di:
-            di[w] = di[w] + 1
-        else:
-            di[w] = 1
-            print("**NEW**")
-        print(w, di[w])
+        oldCount = di.get(w, 0)
+        print(w, 'old', oldCount)
+        newCount = oldCount + 1
+        di[w] = newCount
+        print(w, 'new', newCount)
 print(di)
