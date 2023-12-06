@@ -15,9 +15,6 @@ for line in handle:
     line = line.rstrip()
     words = line.split()
     for w in words:
-        oldCount = di.get(w, 0)
-        print(w, 'old', oldCount)
-        newCount = oldCount + 1
-        di[w] = newCount
-        print(w, 'new', newCount)
+        di[w] = di.get(w, 0) + 1
+        print(w, 'new', di[w])
 print(di)
