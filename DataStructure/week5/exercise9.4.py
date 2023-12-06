@@ -18,8 +18,8 @@ for line in handle:
         print("**", w, di.get(w, -99))
         if w in di:
             di[w] = di[w] + 1
-            print("**EXISTING&**")
         else:
             di[w] = 1
             print("**NEW**")
         print(w, di[w])
+print(di)
