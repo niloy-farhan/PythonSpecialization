@@ -16,5 +16,6 @@ for line in handle:
     words = line.split()
     for w in words:
         di[w] = di.get(w, 0) + 1
-print(di)
 
+for k, v in di.items():
+    print(k, v)
