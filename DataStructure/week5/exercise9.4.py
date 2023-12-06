@@ -16,5 +16,5 @@ for line in handle:
     words = line.split()
     for w in words:
         di[w] = di.get(w, 0) + 1
-        print(w, 'new', di[w])
 print(di)
+
