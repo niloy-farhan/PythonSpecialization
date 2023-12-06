@@ -16,6 +16,9 @@ for line in handle:
     words = line.split()
     for w in words:
         di[w] = di.get(w, 0) + 1
-
+largest = -1
 for k, v in di.items():
     print(k, v)
+    if v > largest:
+        largest = v
+print('Done', largest)
