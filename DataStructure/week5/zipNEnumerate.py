@@ -4,13 +4,13 @@ z_coord = [4, 16, -6, -42, 3, -6, 23, -1]
 labels = ["F", "J", "A", "Q", "Y", "B", "W", "X"]
 
 points = []
+for point in zip(labels, x_coord, y_coord, z_coord):
+    points.append("{}: {}, {}, {}".format(*point))
 
-zippy = list(zip(labels, x_coord, y_coord, z_coord))
-
-for coord in zippy:
-    points.append("{}: {}, {}, {}".format(*coord))
 print(points)
 
+for point in points:
+    print(point)
 
 
 
