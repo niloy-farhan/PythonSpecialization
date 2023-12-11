@@ -5,7 +5,12 @@ labels = ["F", "J", "A", "Q", "Y", "B", "W", "X"]
 
 points = []
 
-zipy = list(zip(x_coord, y_coord, z_coord, labels))
+zippy = list(zip(labels, x_coord, y_coord, z_coord))
 
-print(zipy)
+for coord in zippy:
+    points.append("{}: {}, {}, {}".format(*coord))
+print(points)
+
+
+
 
