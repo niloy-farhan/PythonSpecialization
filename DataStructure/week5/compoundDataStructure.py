@@ -9,4 +9,4 @@ elements = {"hydrogen": {"number": 1,
                        "symbol": "O"}
 }
 
-print(elements['helium']['weight'])
+print(elements['oxygen']['weight'])
