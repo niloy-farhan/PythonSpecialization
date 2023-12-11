@@ -8,3 +8,4 @@ points = []
 zipy = list(zip(x_coord, y_coord, z_coord, labels))
 
 print(zipy)
+
