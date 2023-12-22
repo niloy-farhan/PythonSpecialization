@@ -12,4 +12,15 @@ class party_animal:
 
 
 class fan(party_animal):
-    x = 0
+    y = 0
+
+    def extra(self):
+        self.y += 7
+        print(self.name, "party count", self.x, "extra credit", self.x)
+
+
+s = party_animal("Sally")
+a = fan("Adam")
+
+s.party()
+a.party()
